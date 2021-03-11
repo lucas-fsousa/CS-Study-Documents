@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68E7D19E-C196-4345-819C-70F08C3D1F52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Componentes</RootNamespace>
+    <AssemblyName>Componentes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBox.Designer.cs">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_datetimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_datetimer.Designer.cs">
+      <DependentUpon>f_datetimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_filho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_filho.Designer.cs">
+      <DependentUpon>f_filho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_checkbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_checkbox.Designer.cs">
+      <DependentUpon>f_checkbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_checkedlistbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_checkedlistbox.Designer.cs">
+      <DependentUpon>f_checkedlistbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_linkedLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_linkedLabel.Designer.cs">
+      <DependentUpon>f_linkedLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_listbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_listbox.Designer.cs">
+      <DependentUpon>f_listbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_listview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_listview.Designer.cs">
+      <DependentUpon>f_listview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_maskedtextbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_maskedtextbox.Designer.cs">
+      <DependentUpon>f_maskedtextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_monthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_monthCalendar.Designer.cs">
+      <DependentUpon>f_monthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_numericUpDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_numericUpDown.Designer.cs">
+      <DependentUpon>f_numericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_pictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_pictureBox.Designer.cs">
+      <DependentUpon>f_pictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_progressbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_progressbar.Designer.cs">
+      <DependentUpon>f_progressbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_radiobtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_radiobtn.Designer.cs">
+      <DependentUpon>f_radiobtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ComboBox.resx">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_datetimer.resx">
+      <DependentUpon>f_datetimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_filho.resx">
+      <DependentUpon>f_filho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_checkbox.resx">
+      <DependentUpon>f_checkbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_checkedlistbox.resx">
+      <DependentUpon>f_checkedlistbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_linkedLabel.resx">
+      <DependentUpon>f_linkedLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_listbox.resx">
+      <DependentUpon>f_listbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_listview.resx">
+      <DependentUpon>f_listview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_maskedtextbox.resx">
+      <DependentUpon>f_maskedtextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_monthCalendar.resx">
+      <DependentUpon>f_monthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_numericUpDown.resx">
+      <DependentUpon>f_numericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_pictureBox.resx">
+      <DependentUpon>f_pictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_progressbar.resx">
+      <DependentUpon>f_progressbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_radiobtn.resx">
+      <DependentUpon>f_radiobtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-03-04 at 11.25.46 PM.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
